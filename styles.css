@@ -115,6 +115,7 @@ body {
 /* Contenido principal oculto inicialmente */
 .main-content {
     opacity: 1;
+    padding-top: 15px;
 }
 
 .main-content.hidden {
