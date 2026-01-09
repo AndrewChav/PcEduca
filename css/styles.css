@@ -85,7 +85,7 @@ body {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(135deg, #3e4f9e 50%, #050e6a 25%);
+    background: linear-gradient(135deg, #3e4f9e 50%,  #050e6a 25%);
     display: flex;
     flex-direction: column;
     justify-content: center;
