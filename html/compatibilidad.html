@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Learning - Compatibilidad de Componentes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-microchip"></i>
+                <span>PC Educa</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="componentes.html" class="nav-link">
+                        <i class="fas fa-cogs"></i>
+                        <span>Componentes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="compatibilidad.html" class="nav-link active">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span>Compatibilidad</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="galeria.html" class="nav-link">
+                        <i class="fas fa-images"></i>
+                        <span>Galería</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="recursos.html" class="nav-link">
+                        <i class="fas fa-book-open"></i>
+                        <span>Recursos</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado de página -->
+    <header class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-puzzle-piece"></i> Compatibilidad de Componentes</h1>
+            <p>Aprende a verificar que los componentes de tu PC sean compatibles entre sí</p>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Introducción -->
+            <section class="compatibility-intro">
+                <div class="intro-card">
+                    <h2>¿Por qué es importante la compatibilidad?</h2>
+                    <p>
+                        La compatibilidad entre componentes es fundamental para construir una PC funcional y estable. 
+                        No todos los componentes funcionan juntos, y elegir piezas incompatibles puede resultar en 
+                        un sistema que no arranca o tiene problemas de rendimiento.
+                    </p>
+                    <div class="compatibility-levels">
+                        <div class="level-item">
+                            <i class="fas fa-microchip"></i>
+                            <h3>Compatibilidad Física</h3>
+                            <p>Los componentes deben encajar físicamente en sus slots</p>
+                        </div>
+                        <div class="level-item">
+                            <i class="fas fa-bolt"></i>
+                            <h3>Compatibilidad Eléctrica</h3>
+                            <p>Conectores y voltajes deben ser compatibles</p>
+                        </div>
+                        <div class="level-item">
+                            <i class="fas fa-code"></i>
+                            <h3>Compatibilidad Lógica</h3>
+                            <p>Chipset y BIOS deben reconocer los componentes</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- RAM - Placa Madre -->
+            <section class="compatibility-section">
+                <div class="compatibility-card">
+                    <div class="compatibility-header">
+                        <h2><i class="fas fa-memory"></i> Compatibilidad RAM - Placa Madre</h2>
+                        <div class="compatibility-image">
+                            <img src="../images/ram-mobo.jpg" alt="RAM y Placa Madre">
+                        </div>
+                    </div>
+                    <div class="compatibility-content">
+                        <div class="compatibility-factors">
+                            <h3>Factores de compatibilidad:</h3>
+                            <div class="factor-list">
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Tipo de RAM:</strong> DDR3, DDR4, DDR5 (no son intercambiables)
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Capacidad máxima:</strong> Límite de GB que soporta la placa
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Frecuencia:</strong> Velocidad MHz soportada
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Ranuras disponibles:</strong> Número de slots DIMM
+                                </div>
+                            </div>
+                        </div>
+                        <div class="compatibility-examples">
+                            <h3>Ejemplos prácticos:</h3>
+                            <div class="example-box">
+                                <div class="example-good">
+                                    <i class="fas fa-check"></i>
+                                    <strong>Compatible:</strong> Placa con DDR4 + RAM DDR4 3200MHz
+                                </div>
+                                <div class="example-bad">
+                                    <i class="fas fa-times"></i>
+                                    <strong>Incompatible:</strong> Placa DDR4 + RAM DDR5 (no encaja)
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- Procesador - Placa Madre -->
+            <section class="compatibility-section">
+                <div class="compatibility-card">
+                    <div class="compatibility-header">
+                        <h2><i class="fas fa-microchip"></i> Compatibilidad Procesador - Placa Madre</h2>
+                        <div class="compatibility-image">
+                            <img src="../images/cpu-mobo.jpg" alt="CPU y Placa Madre">
+                        </div>
+                    </div>
+                    <div class="compatibility-content">
+                        <div class="compatibility-factors">
+                            <h3>Factores de compatibilidad:</h3>
+                            <div class="factor-list">
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Socket:</strong> Tipo de conector físico (LGA1200, AM4, etc.)
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Chipset:</strong> Controlador de comunicación
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>BIOS:</strong> Firmware debe reconocer el procesador
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>TDP:</strong> Capacidad de refrigeración de la placa
+                                </div>
+                            </div>
+                        </div>
+                        <div class="compatibility-examples">
+                            <h3>Ejemplos prácticos:</h3>
+                            <div class="example-box">
+                                <div class="example-good">
+                                    <i class="fas fa-check"></i>
+                                    <strong>Compatible:</strong> Intel LGA1700 + Placa Z690
+                                </div>
+                                <div class="example-bad">
+                                    <i class="fas fa-times"></i>
+                                    <strong>Incompatible:</strong> AMD AM4 + Placa LGA1700 (diferente socket)
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- GPU - Placa Madre -->
+            <section class="compatibility-section">
+                <div class="compatibility-card">
+                    <div class="compatibility-header">
+                        <h2><i class="fas fa-gamepad"></i> Compatibilidad GPU - Placa Madre</h2>
+                        <div class="compatibility-image">
+                            <img src="../images/gpu-mobo.jpg" alt="GPU y Placa Madre">
+                        </div>
+                    </div>
+                    <div class="compatibility-content">
+                        <div class="compatibility-factors">
+                            <h3>Factores de compatibilidad:</h3>
+                            <div class="factor-list">
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Slot PCIe:</strong> Versión y tamaño (x16, x8)
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Espacio físico:</strong> Longitud de la GPU en el gabinete
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Conectores de poder:</strong> PCIe 6-pin, 8-pin, 12-pin
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Capacidad PSU:</strong> Fuente debe tener potencia suficiente
+                                </div>
+                            </div>
+                        </div>
+                        <div class="compatibility-examples">
+                            <h3>Ejemplos prácticos:</h3>
+                            <div class="example-box">
+                                <div class="example-good">
+                                    <i class="fas fa-check"></i>
+                                    <strong>Compatible:</strong> RTX 3060 + Placa con PCIe x16 + PSU 600W
+                                </div>
+                                <div class="example-bad">
+                                    <i class="fas fa-times"></i>
+                                    <strong>Incompatible:</strong> GPU de 320mm + Gabinete que soporta solo 280mm
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+
+            <!-- Fuente de Poder - Componentes -->
+            <section class="compatibility-section">
+                <div class="compatibility-card">
+                    <div class="compatibility-header">
+                        <h2><i class="fas fa-bolt"></i> Compatibilidad Fuente de Poder - Componentes</h2>
+                        <div class="compatibility-image">
+                            <img src="../images/psu-components.jpg" alt="Fuente de Poder y Componentes">
+                        </div>
+                    </div>
+                    <div class="compatibility-content">
+                        <div class="compatibility-factors">
+                            <h3>Factores de compatibilidad:</h3>
+                            <div class="factor-list">
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Potencia total:</strong> Watts suficientes para todos los componentes
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Conectores:</strong> 24-pin ATX, 8-pin CPU, PCIe para GPU
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Certificación:</strong> 80 Plus Bronze/Gold/Platinum
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Marca y calidad:</strong> Estabilidad eléctrica
+                                </div>
+                            </div>
+                        </div>
+                        <div class="compatibility-examples">
+                            <h3>Ejemplos prácticos:</h3>
+                            <div class="example-box">
+                                <div class="example-good">
+                                    <i class="fas fa-check"></i>
+                                    <strong>Adecuado:</strong> PC gaming con RTX 3070 + PSU 750W Gold
+                                </div>
+                                <div class="example-bad">
+                                    <i class="fas fa-times"></i>
+                                    <strong>Insuficiente:</strong> Sistema con RTX 4090 + PSU 500W (necesita 850W mínimo)
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- Almacenamiento - Placa Madre -->
+            <section class="compatibility-section">
+                <div class="compatibility-card">
+                    <div class="compatibility-header">
+                        <h2><i class="fas fa-hdd"></i> Compatibilidad Almacenamiento - Placa Madre</h2>
+                        <div class="compatibility-image">
+                            <img src="../images/storage-mobo.jpg" alt="Almacenamiento y Placa Madre">
+                        </div>
+                    </div>
+                    <div class="compatibility-content">
+                        <div class="compatibility-factors">
+                            <h3>Factores de compatibilidad:</h3>
+                            <div class="factor-list">
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Interfaz SATA:</strong> Conectores SATA II/III para HDD/SSD
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Ranuras M.2:</strong> Para SSD NVMe de alta velocidad
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Número de puertos:</strong> Cantidad de dispositivos soportados
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Modo RAID:</strong> Configuración de múltiples discos
+                                </div>
+                            </div>
+                        </div>
+                        <div class="compatibility-examples">
+                            <h3>Ejemplos prácticos:</h3>
+                            <div class="example-box">
+                                <div class="example-good">
+                                    <i class="fas fa-check"></i>
+                                    <strong>Compatible:</strong> SSD NVMe + Placa con ranura M.2 PCIe
+                                </div>
+                                <div class="example-bad">
+                                    <i class="fas fa-times"></i>
+                                    <strong>Incompatible:</strong> 5 discos SATA + Placa con solo 4 puertos
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Espacio para video -->
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gabinete - Componentes -->
+            <section class="compatibility-section">
+                <div class="compatibility-card">
+                    <div class="compatibility-header">
+                        <h2><i class="fas fa-desktop"></i> Compatibilidad Gabinete - Componentes</h2>
+                        <div class="compatibility-image">
+                            <img src="../images/case-components.jpg" alt="Gabinete y Componentes">
+                        </div>
+                    </div>
+                    <div class="compatibility-content">
+                        <div class="compatibility-factors">
+                            <h3>Factores de compatibilidad:</h3>
+                            <div class="factor-list">
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Factor de forma:</strong> ATX, Micro-ATX, Mini-ITX
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Espacio para GPU:</strong> Longitud máxima de tarjeta gráfica
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Altura para cooler:</strong> Espacio para disipador de CPU
+                                </div>
+                                <div class="factor-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <strong>Bahías de almacenamiento:</strong> Slots para HDD/SSD
+                                </div>
+                            </div>
+                        </div>
+                        <div class="compatibility-examples">
+                            <h3>Ejemplos prácticos:</h3>
+                            <div class="example-box">
+                                <div class="example-good">
+                                    <i class="fas fa-check"></i>
+                                    <strong>Compatible:</strong> Placa ATX + Gabinete ATX con espacio para GPU de 350mm
+                                </div>
+                                <div class="example-bad">
+                                    <i class="fas fa-times"></i>
+                                    <strong>Incompatible:</strong> Placa E-ATX + Gabinete Mini-ITX (no cabe)
+                                </div>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+
+            <!-- Herramientas de verificación -->
+            <section class="tools-section">
+                <div class="tools-card">
+                    <h2><i class="fas fa-tools"></i> Herramientas de Verificación</h2>
+                    <p>Utiliza estas herramientas para verificar la compatibilidad antes de comprar componentes:</p>
+                    <div class="tools-grid">
+                        <div class="tool-item">
+                            <i class="fas fa-search"></i>
+                            <h3>PCPartPicker</h3>
+                            <p>Verificador de compatibilidad en línea</p>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-microchip"></i>
+                            <h3>CPU-Z</h3>
+                            <p>Identifica componentes actuales</p>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-calculator"></i>
+                            <h3>Calculadora de PSU</h3>
+                            <p>Calcula potencia necesaria</p>
+                        </div>
+                        <div class="tool-item">
+                            <i class="fas fa-book"></i>
+                            <h3>Manuales del fabricante</h3>
+                            <p>Especificaciones técnicas oficiales</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+  <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PC Educa</h3>
+                    <p>Educación técnica en hardware de computadoras para estudiantes de bachillerato.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="componentes.html">Componentes</a></li>
+                        <li><a href="compatibilidad.html">Compatibilidad</a></li>
+                        <li><a href="recursos.html">Recursos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <p><i class="fas fa-graduation-cap"></i> Proyecto Educativo</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PC Educa - Proyecto Educativo de Informática</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+</html>

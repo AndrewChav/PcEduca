@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PC Learning - Galería de Componentes</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-microchip"></i>
+                <span>PC Educa</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">
+                        <i class="fas fa-home"></i>
+                        <span>Inicio</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="componentes.html" class="nav-link">
+                        <i class="fas fa-cogs"></i>
+                        <span>Componentes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="compatibilidad.html" class="nav-link">
+                        <i class="fas fa-puzzle-piece"></i>
+                        <span>Compatibilidad</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="galeria.html" class="nav-link active">
+                        <i class="fas fa-images"></i>
+                        <span>Galería</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="recursos.html" class="nav-link">
+                        <i class="fas fa-book-open"></i>
+                        <span>Recursos</span>
+                    </a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Encabezado de página -->
+    <header class="page-header">
+        <div class="container">
+            <h1><i class="fas fa-images"></i> Galería de Componentes</h1>
+            <p>Explora imágenes detalladas de cada componente del PC</p>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <div class="container">
+            <!-- Filtros de galería -->
+            <section class="gallery-filters">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">
+                        <i class="fas fa-th"></i> Todos
+                    </button>
+                    <button class="filter-btn" data-filter="cpu">
+                        <i class="fas fa-microchip"></i> Procesadores
+                    </button>
+                    <button class="filter-btn" data-filter="ram">
+                        <i class="fas fa-memory"></i> Memoria RAM
+                    </button>
+                    <button class="filter-btn" data-filter="motherboard">
+                        <i class="fas fa-circuit-board"></i> Placas Madre
+                    </button>
+                    <button class="filter-btn" data-filter="gpu">
+                        <i class="fas fa-gamepad"></i> Tarjetas Gráficas
+                    </button>
+                    <button class="filter-btn" data-filter="storage">
+                        <i class="fas fa-hdd"></i> Almacenamiento
+                    </button>
+                    <button class="filter-btn" data-filter="psu">
+                        <i class="fas fa-bolt"></i> Fuentes de Poder
+                    </button>
+                    <button class="filter-btn" data-filter="cooling">
+                        <i class="fas fa-snowflake"></i> Refrigeración
+                    </button>
+                    <button class="filter-btn" data-filter="case">
+                        <i class="fas fa-desktop"></i> Gabinetes
+                    </button>
+                </div>
+            </section>
+
+            <!-- Galería de imágenes -->
+            <section class="gallery-grid">
+                <!-- CPU Gallery Items -->
+                <div class="gallery-item" data-category="cpu">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/cpu-1.jpg" alt="Procesador Intel">
+                        <div class="gallery-overlay">
+                            <h3>Intel Core i7</h3>
+                            <p>Procesador de 12ª generación con 8 núcleos y 16 hilos</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/cpu-1.jpg')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cpu">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/cpu-2.jpg" alt="Procesador AMD">
+                        <div class="gallery-overlay">
+                            <h3>AMD Ryzen 7</h3>
+                            <p>Procesador con arquitectura Zen 3 y 8 núcleos</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/cpu-2.jpg')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cpu">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/cpu-3.jpg" alt="Socket CPU">
+                        <div class="gallery-overlay">
+                            <h3>Socket LGA1700</h3>
+                            <p>Conector de procesador Intel de última generación</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/cpu-3.jpg')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RAM Gallery Items -->
+                <div class="gallery-item" data-category="ram">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/ram-1.jpg" alt="Memoria RAM DDR4">
+                        <div class="gallery-overlay">
+                            <h3>RAM DDR4 RGB</h3>
+                            <p>Módulo de 16GB con iluminación LED personalizable</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/ram-1.jpg')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="ram">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/ram-2.jpg" alt="Kit RAM Dual Channel">
+                        <div class="gallery-overlay">
+                            <h3>Kit Dual Channel</h3>
+                            <p>2x8GB configurados para rendimiento óptimo</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/ram-2.jpg')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="ram">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/ram-3.jpg" alt="Slots RAM Placa Madre">
+                        <div class="gallery-overlay">
+                            <h3>Ranuras DIMM</h3>
+                            <p>Slots de memoria en placa madre con soporte Dual Channel</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/ram-3.jpg')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Motherboard Gallery Items -->
+                <div class="gallery-item" data-category="motherboard">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/mobo-1.jpg" alt="Placa Madre ATX">
+                        <div class="gallery-overlay">
+                            <h3>Placa Madre ATX</h3>
+                            <p>Modelo completo con múltiples slots de expansión</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/mobo-1.jpg')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="motherboard">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/mobo-3.png" alt="Chipset y VRM">
+                        <div class="gallery-overlay">
+                            <h3>Chipset y VRM</h3>
+                            <p>Controlador principal y sistema de alimentación</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/mobo-3.png')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="motherboard">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/mobo-2.png" alt="Puertos de Placa Madre">
+                        <div class="gallery-overlay">
+                            <h3>Panel de E/S</h3>
+                            <p>Puertos USB, audio y red en placa madre</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/mobo-2.png')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GPU Gallery Items -->
+                <div class="gallery-item" data-category="gpu">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/gpu-1.jpg" alt="Tarjeta Gráfica Gaming">
+                        <div class="gallery-overlay">
+                            <h3>RTX 3070 Gaming</h3>
+                            <p>Tarjeta gráfica de alta gama con ray tracing</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/gpu-1.jpg')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="gpu">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/gpu-2.png" alt="Sistema de Refrigeración GPU">
+                        <div class="gallery-overlay">
+                            <h3>Cooler de GPU</h3>
+                            <p>Sistema de enfriamiento con triple ventilador</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/gpu-2.png')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="gpu">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/gpu-3.png" alt="Conectores GPU">
+                        <div class="gallery-overlay">
+                            <h3>Conectores de Video</h3>
+                            <p>HDMI, DisplayPort y conectores de alimentación</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/gpu-3.png')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Storage Gallery Items -->
+                <div class="gallery-item" data-category="storage">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/ssd-1.jpg" alt="SSD SATA">
+                        <div class="gallery-overlay">
+                            <h3>SSD SATA</h3>
+                            <p>Unidad de estado sólido de 2.5 pulgadas</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/ssd-1.jpg')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="storage">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/ssd-2.png" alt="SSD NVMe M.2">
+                        <div class="gallery-overlay">
+                            <h3>SSD NVMe M.2</h3>
+                            <p>Almacenamiento de alta velocidad con factor de forma compacto</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/ssd-2.png')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="storage">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/hdd-1.png" alt="Disco Duro HDD">
+                        <div class="gallery-overlay">
+                            <h3>HDD 3.5"</h3>
+                            <p>Disco duro mecánico de alta capacidad</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/hdd-1.png')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PSU Gallery Items -->
+                <div class="gallery-item" data-category="psu">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/psu-1.jpg" alt="Fuente de Poder Modular">
+                        <div class="gallery-overlay">
+                            <h3>PSU Modular 750W</h3>
+                            <p>Fuente de poder con certificación 80 Plus Gold</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/psu-1.jpg')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="psu">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/psu-2.png" alt="Conectores de Fuente de Poder">
+                        <div class="gallery-overlay">
+                            <h3>Cables de Alimentación</h3>
+                            <p>Conectores ATX, CPU y PCIe para componentes</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/psu-2.png')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cooling Gallery Items -->
+                <div class="gallery-item" data-category="cooling">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/cooler-1.jpg" alt="Disipador de CPU">
+                        <div class="gallery-overlay">
+                            <h3>Cooler de Aire</h3>
+                            <p>Disipador con ventilador de 120mm para CPU</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/cooler-1.jpg')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cooling">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/cooler-2.png" alt="Refrigeración Líquida">
+                        <div class="gallery-overlay">
+                            <h3>AIO Líquida</h3>
+                            <p>Sistema de enfriamiento líquido todo en uno</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/cooler-2.png')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="cooling">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/fans-1.png" alt="Ventiladores de Gabinete">
+                        <div class="gallery-overlay">
+                            <h3>Ventiladores RGB</h3>
+                            <p>Ventiladores de gabinete con iluminación personalizable</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/fans-1.png')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case Gallery Items -->
+                <div class="gallery-item" data-category="case">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/case-1.jpg" alt="Gabinete Gaming">
+                        <div class="gallery-overlay">
+                            <h3>Gabinete ATX Gaming</h3>
+                            <p>Case con panel lateral de vidrio templado</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/case-1.jpg')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="case">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/case-2.png" alt="Interior de Gabinete">
+                        <div class="gallery-overlay">
+                            <h3>Interior del Gabinete</h3>
+                            <p>Espacio para gestión de cables y flujo de aire</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/case-2.png')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- PC Completo -->
+                <div class="gallery-item" data-category="all">
+                    <div class="gallery-image">
+                        <img src="../images/gallery/pc-complete-1.jpg" alt="PC Gamer Completo">
+                        <div class="gallery-overlay">
+                            <h3>PC Gamer Completa</h3>
+                            <p>Configuración completa con iluminación RGB</p>
+                            <button class="view-btn" onclick="openLightbox('../images/gallery/pc-complete-1.jpg')">
+                                <i class="fas fa-expand"></i> Ampliar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </section>
+        </div>
+    </main>
+
+    <!-- Lightbox modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img id="lightbox-image" src="" alt="Imagen ampliada">
+            <div class="lightbox-nav">
+                <button class="lightbox-prev" onclick="previousImage()">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="lightbox-next" onclick="nextImage()">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+     <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PC Educa</h3>
+                    <p>Educación técnica en hardware de computadoras para estudiantes de bachillerato.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="componentes.html">Componentes</a></li>
+                        <li><a href="compatibilidad.html">Compatibilidad</a></li>
+                        <li><a href="recursos.html">Recursos</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <p><i class="fas fa-graduation-cap"></i> Proyecto Educativo</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 PC Educa - Proyecto Educativo de Informática</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
